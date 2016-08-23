@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画板</title>
+<link rel="stylesheet" href="css/palette.css">
+<link rel="stylesheet" href="css/iconfont.css">
+
+</head>
+<body>
+	<div class="huaban">
+		<div class="left">
+			<div class="xx">
+				<div class="iconfont new" title="新建画布" role="new">&#xe60a;</div>
+				<div class="iconfont back" title="撤销" role="back">&#xe609;</div>
+				<div class="iconfont save" title="保存" role="save">&#xe604;</div>
+				<div class="iconfont clear" title="清空画布" role="clear">&#xe611;</div>
+				<hr>
+				<div class="iconfont line" title="直线" role="line">&#xe602;</div>
+				<div class="iconfont rect" title="矩形" role="rect">&#xe605;</div>
+				<div class="iconfont circle" title="圆形" role="circle">&#xe601;</div>
+				<div class="iconfont triangle" title="三角形" role="triangle">&#xe608;</div>
+				<div class="iconfont poly" title="多边形" role="poly">&#xe60b;</div>
+				<div class="iconfont polyStar" title="星形" role="polyStar">&#xe60d;</div>
+				<div class="iconfont pencil" title="铅笔工具" role="pencil">&#xe603;</div>
+				<div class="iconfont earser" title="橡皮擦" role="earser">&#xe610;</div>
+				<hr>
+			</div>
+			<div class="type">
+				<div class="lineWidth" role="lineWidth"><input type="range" max="20" min="1" value="1" role="lineWidth" >
+				<span>1</span></div>
+				<div class="iconfont strokeStyle" title="描边" role="strokeStyle">&#xe60f;<input type="color" value="#000000"></div>
+				<div class="iconfont fillStyle" title="填充" role="fillStyle">&#xe60e;<input type="color" value="#000000"></div>
+			</div>
+		</div>
+		<div class="right">
+			
+		</div>
+		<div class="xjhb">
+			<h3>新建画布</h3>
+			<div>画布宽度：<input type="text" value="1000" class="width1"></div>
+			<div>画布高度：<input type="text" value="600" class="height1"></div>
+			<button class="qd">确定</button>
+			<button class="qx">取消</button>
+		</div>
+	</div>
+	<script src="js/jquery1.12.3.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/palette.js"></script>
+	<!-- <script>
+		var can=document.querySelector("canvas");
+		var circle=document.querySelector(".circle");
+		var rect=document.querySelector(".rect");
+		var line=document.querySelector(".line");
+		var triangle=document.querySelector(".triangle");
+		var fill=document.querySelector(".fill");
+		var stroke=document.querySelector(".stroke");
+		var earser=document.querySelector(".earser");
+		var pencil=document.querySelector(".pencil");
+		var poly=document.querySelector(".poly");
+		var polyStar=document.querySelector(".polyStar");
+		var color=document.querySelector("input");
+		var copy=document.querySelector(".copy");
+		var palt=new palette(can.getContext("2d"),can,copy);
+		circle.onclick=function(){
+			palt.type="circle";
+			palt.draw();
+		}
+		rect.onclick=function(){
+			palt.type="rect";
+			palt.draw();
+		}
+		line.onclick=function(){
+			palt.type="line";
+			palt.draw();
+		}
+		triangle.onclick=function(){
+			palt.type="triangle";
+			palt.draw();
+		}
+
+		pencil.onclick=function(){
+			palt.pencil();
+		}
+		earser.onclick=function(){
+			palt.earser();
+		}
+		document.querySelector("input").onchange=function(){
+			palt.strokeStyle=this.value;
+			palt.fillStyle=this.value;
+			// alert(this.value);
+		}
+		poly.onclick=function(){
+			palt.type="poly";
+			palt.draw();
+		}
+		polyStar.onclick=function(){
+			palt.type="polyStar";
+			palt.draw();
+		}
+		stroke.onclick=function(){
+			palt.style="stroke";
+		}
+		fill.onclick=function(){
+			palt.style="fill";
+		}
+		// palt.draw();
+	</script> -->
+</body>
+</html>

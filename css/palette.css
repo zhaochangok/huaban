@@ -1,0 +1,149 @@
+body,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+}
+.huaban{
+	margin-left: 150px;
+	height:100%;
+	background:purple;
+}
+.left{
+	margin-left: -150px;
+	padding-top: 6px;
+	box-sizing: border-box;
+	width:150px;
+	float:left;
+	height:100%;
+	background:darkcyan;
+}
+.right{
+	width:100%;
+	height:100%;
+	float:right;
+	background:paleturquoise;
+	position:relative;
+}
+
+.iconfont{
+	display: block;
+	margin-top:8px;
+	color:#fff;
+	text-align: center;
+	cursor:pointer;
+}
+.xx .iconfont{
+	width:70px;
+	height:50px;
+	display: inline-block;
+}
+.iconfont.active{
+	color:gold;
+}
+.iconfont:nth-last-of-type(2){
+	height: 34px;
+	line-height: 34px;
+	font-size: 24px;
+}
+.iconfont:nth-last-of-type(2) input{
+	display: inline-block;
+	width:60px;
+	height: 28px;
+	margin-left: 20px;
+}
+.iconfont:nth-last-of-type(1){
+	font-size: 24px;
+	height: 34px;
+	line-height: 34px;
+}
+.iconfont:nth-last-of-type(1) input{
+	display: inline-block;
+	width:60px;
+	height: 28px;
+	margin-left: 20px;
+}
+hr{
+	color:pink;
+	background: pink;
+}
+canvas{
+	display: block;
+	border:3px solid plum;
+	margin:0 auto;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+.lineWidth>input{
+	width:130px;
+	/*background:gold;*/
+}
+.lineWidth>span{
+	width:130px;
+	height:30px;
+	margin:10px auto 20px;
+	display: block;
+	font-size: 18px;
+	color:purple;
+	text-align: center;
+	line-height: 30px;
+	border:2px solid chocolate;
+}
+.copy{
+	position:absolute;
+	z-index: 9998;
+	/*border:1px solid gold;*/
+	top:10px;
+	left:10px;
+}
+/*.btn{
+	position:absolute;
+	top:10px;
+	left:50px;
+}
+button,input{
+	display: block;
+	margin:10px;
+	width:100px;
+	height:40px;
+}*/
+
+.xjhb{
+	width:300px;
+	height: 240px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-10%,-50%);
+	/*border:1px solid #000;*/
+	text-align: center;
+	background:plum;
+	z-index: 9999;
+}
+.xjhb h3{
+	margin-top: 20px;
+	font-size: 30px;
+	font-weight: 300;
+	color:#000000;
+	text-align: center;
+}
+.xjhb>div{
+	height: 36px;
+	line-height: 36px;
+	/*background: gold;*/
+	margin-top: 14px;
+	text-align: center;
+	font-size: 18px;
+}
+.xjhb button{
+	width:88px;
+	height:38px;
+	margin:20px 10px;
+	background:pink;
+	color:purple;
+	border:none;
+	font-size: 20px;
+}
